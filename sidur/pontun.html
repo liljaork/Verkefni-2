@@ -12,6 +12,7 @@
 <body>
     <header>
         <h1>Pantanir</h1>
+        <h3>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</h3>
     </header>
     <nav>
         <ul>
@@ -23,120 +24,132 @@
     </nav>
     <a class="sr-only" href="#efni">Beint í efni</a>
     <main id="efni">
-        <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
-        <section>
-            <h3>Panta borð</h3>
-            <form>
-                <label for="date">Hvenær viltu koma?</label>
-                <input id="date" type="date" />
-              </form>
-              <form>
-                <label for="fjoldi">Hve mörg?</label>
-                <input id="fjoldi" type="number" max="10" min="1" />
-              </form>
-              <form>
-                <label for="upplýsingar">Viltu taka eitthvað fram?</label>
-                <input id="upplýsingar" type="text" />
-            </form>
-              
-        </section>
-        <section>
-            <h3>Panta mat</h3>
-            <form>
-                <label for="Réttir-val1">Réttur #N</label>
-                <select name="Réttir" id="Réttir-val1">
-                  <option value="">Veldu Rétt</option>
-                  <option value="Lasagna">Lasagna</option>
-                  <option value="Endabrauð">Endabrauð</option>
-                  <option value="Pasta">Pasta</option>
-                  <option value="Áll">Áll</option>
-                  <option value="Plómur">Plómur</option>
-                  <option value="Cesar-salat">Cesar-salat</option>
-                  <option value="Núðlusúpa">Núðlusúpa</option>
-                  <option value="Sæta-brauð">Sæta-brauð</option>
-                  <option value="Kransakaka">Kransakaka</option>
-                </select>
-                <select name="Réttir" id="Réttir-val2">
-                    <option value="">Veldu Rétt</option>
-                    <option value="Lasagna">Lasagna</option>
-                    <option value="Endabrauð">Endabrauð</option>
-                    <option value="Pasta">Pasta</option>
-                    <option value="Áll">Áll</option>
-                    <option value="Plómur">Plómur</option>
-                    <option value="Cesar-salat">Cesar-salat</option>
-                    <option value="Núðlusúpa">Núðlusúpa</option>
-                    <option value="Sæta-brauð">Sæta-brauð</option>
-                    <option value="Kransakaka">Kransakaka</option>
-                </select>
-                <select name="Réttir" id="Réttir-val3">
-                    <option value="">Veldu Rétt</option>
-                    <option value="Lasagna">Lasagna</option>
-                    <option value="Endabrauð">Endabrauð</option>
-                    <option value="Pasta">Pasta</option>
-                    <option value="Áll">Áll</option>
-                    <option value="Plómur">Plómur</option>
-                    <option value="Cesar-salat">Cesar-salat</option>
-                    <option value="Núðlusúpa">Núðlusúpa</option>
-                    <option value="Sæta-brauð">Sæta-brauð</option>
-                    <option value="Kransakaka">Kransakaka</option>
-                </select>
-                <select name="Réttir" id="Réttir-val4">
-                    <option value="">Veldu Rétt</option>
-                    <option value="Lasagna">Lasagna</option>
-                    <option value="Endabrauð">Endabrauð</option>
-                    <option value="Pasta">Pasta</option>
-                    <option value="Áll">Áll</option>
-                    <option value="Plómur">Plómur</option>
-                    <option value="Cesar-salat">Cesar-salat</option>
-                    <option value="Núðlusúpa">Núðlusúpa</option>
-                    <option value="Sæta-brauð">Sæta-brauð</option>
-                    <option value="Kransakaka">Kransakaka</option>
-                </select>
-                <select name="Réttir" id="Réttir-val5">
-                    <option value="">Veldu Rétt</option>
-                    <option value="Lasagna">Lasagna</option>
-                    <option value="Endabrauð">Endabrauð</option>
-                    <option value="Pasta">Pasta</option>
-                    <option value="Áll">Áll</option>
-                    <option value="Plómur">Plómur</option>
-                    <option value="Cesar-salat">Cesar-salat</option>
-                    <option value="Núðlusúpa">Núðlusúpa</option>
-                    <option value="Sæta-brauð">Sæta-brauð</option>
-                    <option value="Kransakaka">Kransakaka</option>
-                </select>
-            </form>
-            <form>
-                <label for="Heimilisfang">Heimilisfang</label>
-                <input id="Heimilisfang" type="text" />
-            </form>
-        </section>
-        <section>
-            <h3>Þínar upplýsingar</h3>
-            <form>
-                <label for="name">Nafn</label>
-                <input id="name" type="text" required />
-            </form>
-          
-            <form>
-                <label for="email">Netfang</label>
-                <input id="email" placeholder="veitingarlilju@hotmail.com" type="text" required />
-            </form>
-            <form>
-                <label for="phone">Sími</label>
-                <input id="phone" placeholder="123-4567" type="text" required />
-            </form>
-        </section>
-        <section>
-            <h3>Samþykkja og panta</h3>
-            <form>
-                <label for="agree">Ég samþykki skilmála Veitingastaðar Lilju</label>
-                <input id="agree" type="checkbox" />
-            </form>
-          
-            <form>
-                <input type="submit" value="Panta" />
-            </form>
-        </section>
+        <div class="content">
+            <div class="box">
+                <section>
+                    
+                    <h3>Panta borð</h3>
+                    <form>
+                        <label for="date">Hvenær viltu koma?</label>
+                        <input id="date" type="date" />
+                    </form>
+                    <form>
+                        <label for="fjoldi">Hve mörg?</label>
+                        <input id="fjoldi" type="number" max="10" min="1" />
+                    </form>
+                    <form>
+                        <label for="upplýsingar">Viltu taka eitthvað fram?</label>
+                        <input id="upplýsingar" type="text" />
+                    </form>
+                    
+                </section>
+            </div>
+            <div class="box">
+                <section>
+                    <h3>Panta mat</h3>
+                    <form>
+                        <label for="Réttir-val1">Réttur #N</label>
+                        <select name="Réttir" id="Réttir-val1">
+                        <option value="">Veldu Rétt</option>
+                        <option value="Lasagna">Lasagna</option>
+                        <option value="Endabrauð">Endabrauð</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Áll">Áll</option>
+                        <option value="Plómur">Plómur</option>
+                        <option value="Cesar-salat">Cesar-salat</option>
+                        <option value="Núðlusúpa">Núðlusúpa</option>
+                        <option value="Sæta-brauð">Sæta-brauð</option>
+                        <option value="Kransakaka">Kransakaka</option>
+                        </select>
+                        <select name="Réttir" id="Réttir-val2">
+                            <option value="">Veldu Rétt</option>
+                            <option value="Lasagna">Lasagna</option>
+                            <option value="Endabrauð">Endabrauð</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Áll">Áll</option>
+                            <option value="Plómur">Plómur</option>
+                            <option value="Cesar-salat">Cesar-salat</option>
+                            <option value="Núðlusúpa">Núðlusúpa</option>
+                            <option value="Sæta-brauð">Sæta-brauð</option>
+                            <option value="Kransakaka">Kransakaka</option>
+                        </select>
+                        <select name="Réttir" id="Réttir-val3">
+                            <option value="">Veldu Rétt</option>
+                            <option value="Lasagna">Lasagna</option>
+                            <option value="Endabrauð">Endabrauð</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Áll">Áll</option>
+                            <option value="Plómur">Plómur</option>
+                            <option value="Cesar-salat">Cesar-salat</option>
+                            <option value="Núðlusúpa">Núðlusúpa</option>
+                            <option value="Sæta-brauð">Sæta-brauð</option>
+                            <option value="Kransakaka">Kransakaka</option>
+                        </select>
+                        <select name="Réttir" id="Réttir-val4">
+                            <option value="">Veldu Rétt</option>
+                            <option value="Lasagna">Lasagna</option>
+                            <option value="Endabrauð">Endabrauð</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Áll">Áll</option>
+                            <option value="Plómur">Plómur</option>
+                            <option value="Cesar-salat">Cesar-salat</option>
+                            <option value="Núðlusúpa">Núðlusúpa</option>
+                            <option value="Sæta-brauð">Sæta-brauð</option>
+                            <option value="Kransakaka">Kransakaka</option>
+                        </select>
+                        <select name="Réttir" id="Réttir-val5">
+                            <option value="">Veldu Rétt</option>
+                            <option value="Lasagna">Lasagna</option>
+                            <option value="Endabrauð">Endabrauð</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Áll">Áll</option>
+                            <option value="Plómur">Plómur</option>
+                            <option value="Cesar-salat">Cesar-salat</option>
+                            <option value="Núðlusúpa">Núðlusúpa</option>
+                            <option value="Sæta-brauð">Sæta-brauð</option>
+                            <option value="Kransakaka">Kransakaka</option>
+                        </select>
+                    </form>
+                    <form>
+                        <label for="Heimilisfang">Heimilisfang</label>
+                        <input id="Heimilisfang" type="text" />
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <section>
+                    <h3>Þínar upplýsingar</h3>
+                    <form>
+                        <label for="name">Nafn</label>
+                        <input id="name" type="text" required />
+                    </form>
+                
+                    <form>
+                        <label for="email">Netfang</label>
+                        <input id="email" placeholder="veitingarlilju@hotmail.com" type="text" required />
+                    </form>
+                    <form>
+                        <label for="phone">Sími</label>
+                        <input id="phone" placeholder="123-4567" type="text" required />
+                    </form>
+                </section>
+            </div>
+            <div class="box">
+                <section>
+                    <h3>Samþykkja og panta</h3>
+                    <form>
+                        <label for="agree">Ég samþykki skilmála Veitingastaðar Lilju</label>
+                        <input id="agree" type="checkbox" />
+                    </form>
+                
+                    <form>
+                        <input type="submit" value="Panta" />
+                    </form>
+                </section>
+            </div>
+        </div>
         <nav><a href="../index.html">Aftur á forsíðu</a></nav>
     </main>
     <footer>
