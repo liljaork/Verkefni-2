@@ -7,21 +7,24 @@
     <meta property="og:title"content="Veitingastaður Lilju"> 
     <meta property="og:description"content="Veitingarstaður með veitingum sem eru mögulega vondar">
     <meta property="og:image"content="myndir/sharing.jpg">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Veitingastaður Lilju</h1>
         <h4>Við erum búin að elda mat fyrir "fólk" í eina viku.</h4>
-        <a href="#efni">Beint í efni</a>
-        <nav>
-            <ul>
-                <li><a href="sidur/pontun.html">Panta</a></li>
-                <li><a href="sidur/matsedill.html">Matseðill</a></li>
-                <li><a href="sidur/um.html">Um okkur</a></li>
-            </ul>
-            
-        </nav>
     </header>
+    
+    <nav>
+        <ul>
+            <li><a href="sidur/pontun.html">Panta</a></li>
+            <li><a href="sidur/matsedill.html">Matseðill</a></li>
+            <li><a href="sidur/um.html">Um okkur</a></li>
+        </ul>
+            
+    </nav>
+    <a class="sr-only" href="#efni">Beint í efni</a>
+   
     <main id="efni">
         <section>
             <h2>Veitingastaðurinn</h2>
@@ -43,17 +46,17 @@
         <section>
             <h3>Um okkur</h3>
             <p>Við erum fólk sem útbýr mat alla daga nema sunnudaga.</p>
-            <a href="um.html">Lesa meira um okkur</a>
+            <a href="sidur/um.html">Lesa meira um okkur</a>
         </section>
         <section>
             <h3>Matseðill</h3>
             <p>Skoðaðu matseðilinn okkar!</p>
-            <a href="matsedill.html">Skoða matseðil</a>
+            <a href="sidur/matsedill.html">Skoða matseðil</a>
         </section>
         <section>
             <h3>Panta</h3>
             <p>Pantaðu borð eða mat heim til þín!</p>
-            <a href="pontun.html">Senda inn pöntun</a>
+            <a href="sidur/pontun.html">Senda inn pöntun</a>
         </section>
         <section>
             <h2>Vinsælir Réttir</h2>
@@ -65,28 +68,35 @@
         </section>
     </main>
     <footer>
-        <h2>Opnunartími</h2>
-        <dl>
-            <dt>Mánudaga til fimmtudaga</dt>
-            <dd>09:00-11:30</dd>
-            <dd>Lokað milli 11:30-13:00</dd>
-            <dd>13:00-18:00</dd>
+        <div class="content">
+            <div class="box">
+                <h2>Opnunartími</h2>
+            <dl>
+                <dt>Mánudaga til fimmtudaga</dt>
+                <dd>09:00-11:30</dd>
+                <dd>Lokað milli 11:30-13:00</dd>
+                <dd>13:00-18:00</dd>
 
-            <dt>Föstudaga</dt>
-            <dd>10:00-22:00</dd>
-            <dt>Laugardagar</dt>
-            <dd>11:00-22:00</dd>
-            <dt>Sunnudagar</dt>
-            <dd>Lokað</dd>
-        </dl>
-        <h2>Staðsetning</h2>
-        <dl>
-            <dt>Veitingastaður Lilju ehf.</dt>
-            <dt>Dunhagi 7,</dt>
-            <dt>107 Reykjavík</dt>
-            <dt>Nördakjallaranum</dt>
-            <dt><a href="mailto:veitingarlilju@hotmail.com">veitingarlilju@hotmail.com</a></dt>
-        </dl>
+                <dt>Föstudaga</dt>
+                <dd>10:00-22:00</dd>
+                <dt>Laugardagar</dt>
+                <dd>11:00-22:00</dd>
+                <dt>Sunnudagar</dt>
+                <dd>Lokað</dd>
+            </dl>
+            </div>
+            
+            <div class="box">
+                <h2>Staðsetning</h2>
+            <dl>
+                <dt>Veitingastaður Lilju ehf.</dt>
+                <dt>Dunhagi 7,</dt>
+                <dt>107 Reykjavík</dt>
+                <dt>Nördakjallaranum</dt>
+                <dt><a href="mailto:veitingarlilju@hotmail.com">veitingarlilju@hotmail.com</a></dt>
+            </dl>
+            </div>
+        </div>
         
     </footer>
 </body>
