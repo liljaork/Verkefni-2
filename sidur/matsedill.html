@@ -1,122 +1,133 @@
 <!DOCTYPE html>
 <html lang="is">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta property="og:title"content="Veitingastaður Lilju"> 
-    <meta property="og:description"content="Veitingarstaður með veitingum sem eru mögulega vondar">
-    <meta property="og:image"content="myndir/sharing.jpg">
-</head>
-<body>
-    <header>
-        <h1>Veitingar</h1>
-        <a href="#efni">Beint í efni</a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Forsíða</a></li>
-                <li><a href="pontun.html">Panta</a></li>
-                <li><a href="um.html">Um okkur</a></li>
-            </ul>
-            
-        </nav>
-    </header>
-    <main id="efni">
-        
-        <section>
-            <h2>Vinsælir réttir</h2>
-            <table>
-                <thead>
-                    <th>Nr. </th>
-                    <th>Titill réttar</th>
-                    <th>Lýsing</th>
-                    <th>Verd</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1.</td>
-                        <td>Lasanga</td>
-                        <td>Lasanga með salti</td>
-                        <td><strong>3501 kr.-</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2.</td>
-                        <td>Endabrauð</td>
-                        <td>Sveppa-ristað endabrauð með jalapeno</td>
-                        <td><strong>2301 kr.-</strong></td>
-                    </tr>
-                    <tr>
-                        <td>3.</td>
-                        <td>Pasta</td>
-                        <td>Djúpsteikt pasta með brúnni sósu</td>
-                        <td><strong>4702 kr.-</strong></td>
-                    </tr>
-                    <tr>
-                        <td>4.</td>
-                        <td>Áll</td>
-                        <td>Marineraður áll með lauk</td>
-                        <td><strong>6501 kr.-</strong></td>
-                    </tr>
-                    <tr>
-                        <td>5.</td>
-                        <td>Plómur</td>
-                        <td>Niðursoðnar plómur með selleríi</td>
-                        <td><strong>4501 kr.-</strong></td>
-                    </tr>
-                    <tr>
-                        <td>6.</td>
-                        <td>Cesar-salat</td>
-                        <td>Cesar salat alveg eftir uppskrift, án sósu.</td>
-                        <td><strong>5401 kr.-</strong></td>
-                    </tr>
-                    <tr>
-                        <td>7.</td>
-                        <td>Núðlusúpa</td>
-                        <td>Pakkanúðlusúpa með gulrætum</td>
-                        <td><strong>2301 kr.-</strong></td>
-                    </tr>
-                    <tr>
-                        <td>8.</td>
-                        <td>Sæta-brauð</td>
-                        <td>Rúgbrauð bakað í sykri með marmelaði og mysing</td>
-                        <td><strong>2001 kr.-</strong></td>
-                    </tr>
-                    <tr>
-                        <td>9.</td>
-                        <td>Kransakaka</td>
-                        <td>Frosin kransakaka frá síðasta ári</td>
-                        <td><strong>2 kr.-</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><small>Neysla matvæla er á eigin ábyrgð neytenda, þótt matur er brenndur eða skemmdur.</small></p>
-        </section>
-        <nav><a href="../index.html">Aftur á forsíðu</a></nav>
-    </main>
-    <footer>
-        <h2>Opnunartími</h2>
-        <dl>
-            <dt>Mánudaga til fimmtudaga</dt>
-            <dd>09:00-11:30</dd>
-            <dd>Lokað milli 11:30-13:00</dd>
-            <dd>13:00-18:00</dd>
 
-            <dt>Föstudaga</dt>
-            <dd>10:00-22:00</dd>
-            <dt>Laugardagar</dt>
-            <dd>11:00-22:00</dd>
-            <dt>Sunnudagar</dt>
-            <dd>Lokað</dd>
-        </dl>
-        <h2>Staðsetning</h2>
-        <dl>
-            <dt>Veitingastaður Lilju ehf.</dt>
-            <dt>Dunhagi 7,</dt>
-            <dt>107 Reykjavík</dt>
-            <dt>Nördakjallaranum</dt>
-            <dt><a href="mailto:veitingarlilju@hotmail.com">veitingarlilju@hotmail.com</a></dt>
-        </dl>
-        
-    </footer>
+<head>
+  <meta charset="utf-8">
+  <title>Matseðill | Veitingastaðurinn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="description" content="Um Veitingastaðinn, saga og starfsfólk.">
+  <meta property="og:title" content="Veitingastaðurinn">
+  <meta property="og:description" content="Um Veitingastaðinn, saga og starfsfólk.">
+  <meta property="og:image" content="./myndir/sharing.jpg">
+</head>
+
+<body>
+  <header>
+    <h1>Matseðill</h1>
+    <p>Skoðaðu það sem við höfum upp á að bjóða!</p>
+  </header>
+
+  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Forsíða</a></li>
+      <li><a href="./um.html">Um Veitingastaðinn</a></li>
+      <li><strong>Matseðill</strong></li>
+      <li><a href="./pontun.html">Pöntunarsíða</a></li>
+    </ul>
+  </nav>
+
+  <main id="efni">
+    <table>
+      <thead>
+        <tr>
+          <th>Nr.</th>
+          <th>Heiti</th>
+          <th>Lýsing</th>
+          <th>Verð</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Lasagna</td>
+          <td>Lasagna með fersku salati</td>
+          <td>2.500 kr.-</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Sveppa risotto</td>
+          <td>Kremkennt risotto með sveppum og fersku grænmeti</td>
+          <td>2.500 kr.-</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ferskt pasta með pestó</td>
+          <td>
+            Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum
+          </td>
+          <td>2.300 kr.-</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Quesadilla</td>
+          <td>Quesadilla með osti og fersku salsa</td>
+          <td>2.100 kr.-</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Falafel með hummus</td>
+          <td>Falafel með hummus, pitu og fersku salati</td>
+          <td>2.000 kr.-</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Súpa dagsins</td>
+          <td>Daglega ný súpa</td>
+          <td>1.850 kr.-</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Kryddaðar sætkartöflur</td>
+          <td>Kryddaðar sætkartöflur með vorlauk</td>
+          <td>1.100 kr.-</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Hamborgari</td>
+          <td>Hamborgari með frönskum kartöflum</td>
+          <td>2.500 kr.-</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Pizza</td>
+          <td>Klassísk pizza</td>
+          <td>2.000 kr.-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+  </main>
+
+  <footer>
+    <h2>Opnunartími</h2>
+    <dl>
+      <dt>Mánudaga til fimmtudaga</dt>
+      <dd>09:00–18:00</dd>
+      <dt>Föstudaga</dt>
+      <dd>10:00–22:00</dd>
+      <dt>Laugardaga</dt>
+      <dd>11:00–22:00</dd>
+      <dt>Sunnudaga</dt>
+      <dd>Lokað</dd>
+    </dl>
+
+    <h2>Hér erum við</h2>
+    <ul>
+      <li>Veitingastaðurinn ehf.</li>
+      <li>Aðalgata 10</li>
+      <li>100 Reykjavík</li>
+      <li><a href="tel:3334567">Sími 333-4567</a></li>
+      <li>
+        <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+      </li>
+    </ul>
+  </footer>
 </body>
+
 </html>
