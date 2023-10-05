@@ -154,7 +154,12 @@
   /** Meginmál **/
   
   .main {
-    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  
+    /*flex: 1;
     display: flex;
     flex-direction: column;
     gap: var(--spacing);
@@ -163,7 +168,7 @@
     padding-left: var(--spacing);
     padding-right: var(--spacing);
     width: 100%;
-    max-width: var(--max-width);
+    max-width: var(--max-width);*/
   }
   
   /** Fótur **/
